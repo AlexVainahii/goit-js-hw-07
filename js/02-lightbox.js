@@ -12,9 +12,10 @@ const mainGalery = document.querySelector(".gallery");
 mainGalery.insertAdjacentHTML("afterbegin", galeryList);
 console.log(galleryItems);
 
-let gallery = new SimpleLightbox('.gallery a',{captions,
-  captionType});
-gallery.on('show.simplelightbox', function () {
-	
+const gallery = new SimpleLightbox('.gallery a',
+{
+  captionsData:"alt",
+  captionDelay:250,
 });
+
 
